@@ -9,6 +9,7 @@
 }
 html, body { 
   overflow-x: hidden;
+  overflow-y: hidden;
 }    
 body, p, input {
   margin: 0;
