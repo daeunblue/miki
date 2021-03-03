@@ -1,0 +1,61 @@
+.top-area {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #FFF8E5;
+  padding-top: 2rem;  
+}
+.title {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  color: #2E0A0A;
+}
+.go-prev {
+  width: 70px;
+  height: 70px;
+  font-size: 4rem;
+  color: #2E0A0A;
+}
+h1 {
+  margin: 0;
+  font-size: 4rem;
+}
+.search {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 30px 0; */
+}
+.search-input {
+  border: 2px solid #2678D9;
+  border-radius: 15px 0 0 15px;
+  width: 360px;
+  height: 55px;
+  padding: 15px;
+  font-size: 0.95rem;
+}
+.search-btn {
+  background: #2678D9;
+  width: 50px;
+  height: 55px;
+  border-radius: 0 15px 15px 0;
+  color: #fff;
+}
+.turn-on-mic {
+  background-image: url('./img/loupe.png');
+  width: 55px;
+  height: 55px;
+  font-size: 0;
+}
+.bottom-area {
+  width: 100%;
+  height: 67%;
+  background-color: #FFDA73;
+  border-radius: 70px 70px 0 0;
+}
