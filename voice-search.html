@@ -16,7 +16,8 @@
   <div id="wrap">
     <div class="top-area">
       <div class="title">
-        <a class="go-prev" href="./categoryList.html">&lt;</a>
+        <!-- <a class="go-prev" href="./categoryList.html">&lt;</a> -->
+        <button class="go-prev">&lt;</button>
         <h1>음성 검색</h1>
       </div>
       <div class="mic-area">
@@ -35,10 +36,12 @@
   <script src="./js/speech-recognition.js"></script>
   <script>
     const searchInput = document.getElementById('speech');
+    const goPrevBtn = document.querySelector('.go-prev');
     const retry = document.querySelector('.retry');
-    retry.addEventListener('click', () => {
-      searchInput.value = '';
-    });
+
+    goPrevBtn.addEventListener('click', () => { history.back(); });
+
+    retry.addEventListener('click', () => { searchInput.value = ''; });
   </script>
 </body>
 

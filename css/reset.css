@@ -9,7 +9,7 @@
 }
 html, body { 
   overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }    
 body, p, input {
   margin: 0;
@@ -45,5 +45,5 @@ body {
   width: 100%;
   max-width: 600px;
   min-height: 100vh;
-  max-height: 100vh;
+  max-height: 1500px;
 }
