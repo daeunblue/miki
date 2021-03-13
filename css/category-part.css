@@ -75,7 +75,6 @@ h1 {
 .small-category {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
   align-items: center;
   width: 100%;
   padding: 10px 20px;
@@ -121,6 +120,7 @@ h1 {
 .item-card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 49%;
   border: 3px rgba(255, 218, 115, 0.7) solid;
   border-radius: 10px; 
@@ -129,11 +129,8 @@ h1 {
 .item-card > * {
   cursor: pointer;
 }
-.item-card > *:last-child {
-  margin-bottom: 50px;
-}
 .thumbnail-img {
-  margin: 5px;
+  margin: 15px 5px;
   width: 180px;
   height: 180px;
   border-radius: 10px;
@@ -154,6 +151,7 @@ h1 {
   display: flex;
   align-items: center;
   margin: 10px 20px;
+  margin-bottom: 30px;
 }
 .origin-price {
   color: #A7A4A4;
@@ -165,4 +163,16 @@ h1 {
   color: #E93C15;
   font-weight: 900;
   font-size: 1.2rem;
+}
+.go-test {
+  background-color: #FB9070;
+  border: rgba(255, 218, 115, 0.7) 1px solid;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  color: #FFFDEE;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  font-weight: 900;
+  justify-self: flex-end impo !important;
 }
