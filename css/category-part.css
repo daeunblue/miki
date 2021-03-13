@@ -4,7 +4,7 @@
   flex-flow: column nowrap;
   max-height: 1500px;
 }
-.header {
+header {
   width: 100%;
   height: 15%;
   display: flex;
@@ -22,6 +22,7 @@
   color: #2E0A0A;
   text-align: center;
   line-height: 70px;
+  background-color: rgba(0, 0, 0, 0);
 }
 h1 {
   margin: 0;

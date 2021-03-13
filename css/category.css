@@ -6,7 +6,7 @@
   flex-flow: column wrap;
   padding-top: 2rem;  
 }
-.title {
+header {
   width: 100%;
   height: 35%;
   display: flex;
@@ -21,6 +21,7 @@
   color: #2E0A0A;
   text-align: center;
   line-height: 70px;
+  background-color: rgba(0, 0, 0, 0);
 }
 h1 {
   margin: 0;

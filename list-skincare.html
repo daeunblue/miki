@@ -11,16 +11,17 @@
 </head>
 <body>
   <div id="wrap">
-    <div class="header">
+    <!-- class header -->
+    <header>
       <div class="title-container">
-        <a class="go-prev" href="./categoryList.html">&lt;</a>
+        <button class="go-prev">&lt;</button>
         <h1 class="title">스킨케어</h1>  
       </div>
       <div class="top-button-container">
         <button class="turn-on-mic" title="https://www.flaticon.com/authors/dave-gandy"></button>
         <button class="go-cart" title="https://www.freepik.com"></button>  
       </div>
-    </div>
+    </header>
     <div class="mid-category">
       <button class="mid-btn cat">기본</button>
       <button class="mid-btn cat">마스크팩</button>
@@ -119,10 +120,11 @@
     const itemCardList= document.querySelectorAll('.item-card');
     const mic = document.querySelector('.turn-on-mic');
     const cart = document.querySelector('.go-cart');
+    const goPrevBtn = document.querySelector('.go-prev');
 
-    mic.addEventListener('click', () => {
-      location.href = './voice-search.html';
-    });
+    goPrevBtn.addEventListener('click', () => { history.back(); });
+
+    mic.addEventListener('click', () => location.href = './voice-search.html');
     cart.addEventListener('click', () => {
       //아직 cart.html 구현 전
       location.href = './cart.html';

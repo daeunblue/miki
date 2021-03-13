@@ -11,10 +11,11 @@
 <body>
   <div id="wrap">
     <div class="top-area">
-      <div class="title">
-        <a class="go-prev" href="./index.html">&lt;</a>
+      <!-- class="title"-->
+      <header>
+        <button class="go-prev">&lt;</button>
         <h1>상품 검색</h1>
-      </div>
+      </header>
       <div class="search">
         <input type="text" class="search-input" placeholder="피지오겔 DMT 로션 200ml">
         <button class="search-btn">검색</button>
@@ -130,10 +131,11 @@
   </div>
 
   <script>
-    const mic = document.querySelector('.turn-on-mic')
-    mic.addEventListener('click', () => {
-      location.href = './voice-search.html';
-    });
+    const mic = document.querySelector('.turn-on-mic');
+    const goPrevBtn = document.querySelector('.go-prev');
+
+    goPrevBtn.addEventListener('click', () => history.back());
+    mic.addEventListener('click', () => location.href = './voice-search.html' );
   </script>
 </body>
 </html>
