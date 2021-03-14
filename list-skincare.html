@@ -141,6 +141,7 @@
             smallCatList.forEach(smallC => {
               if (smallC.classList.contains('cat-selected')) {
                 smallC.classList.remove('cat-selected');
+                itemContainer.style.display = 'none';
               }
             });
           };

@@ -13,7 +13,7 @@
     <header>
       <div class="title-container">
         <button class="go-prev">&lt;</button>
-        <h1 class="title">스킨케어</h1>  
+        <h1 class="title">상품</h1>  
       </div>
       <div class="top-button-container">
         <button class="go-cart" title="https://www.freepik.com"></button>  
@@ -48,8 +48,10 @@
   </div>
   <script>
     const goPrevBtn = document.querySelector('.go-prev');
+    const footer = document.querySelector('footer');
 
     goPrevBtn.addEventListener('click', () => history.back());
+    footer.addEventListener('click', () => location.href = './item-detail.html');
   </script>
 </body>
 </html>
