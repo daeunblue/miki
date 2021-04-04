@@ -41,17 +41,18 @@
       <button class="item-next-btn">&gt;</button>
     </div>
     <div class="cam-container">
-      <video autoplay="true" id="test-cam"></video>
+      <video autoplay id="test-cam"></video>
     </div>
   </div>
   <script>
     const testCam = document.getElementById('test-cam');
     
-    if (navigator.mediaDevices.getUserMedia) {
-      navigator.mediaDevices.getUserMedia({ video: true })
-        .then(stream => video.srcObject = stream)
-        .catch(err => console.log('Something went wrong. Need to fix it'));
-    }
+    const startVid = () => navigator.getUserMedia(
+      { video: {} },
+      stream => testCam.srcObject = stream,
+      err => console.error(err)
+    );
+    startVid();
   </script>
 </body>
 </html>
