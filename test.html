@@ -7,6 +7,27 @@
   <title>테스트</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/test.css">
+  <script defer src="/js/face-api.min.js"></script>   
+  <script defer src="/js/test_script.js"></script>
+  <style>
+    /* body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+    .cam-container { 
+      position: relative; }
+
+    canvas {
+        position: absolute;
+        top: 0; left: 0;
+    }
+    
+  </style>
 </head>
 <body>
   <div id="wrap">
@@ -20,7 +41,7 @@
       </div>
     </header>
     <div class="btn-container">
-      <button class="add-item btn">상품 추가</button>
+      <button class="add-item btnㄴ">상품 추가</button>
       <button class="pay-item btn">결제</button>
     </div>
     <div class="item-container">
@@ -41,18 +62,8 @@
       <button class="item-next-btn">&gt;</button>
     </div>
     <div class="cam-container">
-      <video autoplay id="test-cam"></video>
+      <video id="video" width="720" height="560" autoplay muted></video>
     </div>
   </div>
-  <script>
-    const testCam = document.getElementById('test-cam');
-    
-    const startVid = () => navigator.getUserMedia(
-      { video: {} },
-      stream => testCam.srcObject = stream,
-      err => console.error(err)
-    );
-    startVid();
-  </script>
 </body>
 </html>
